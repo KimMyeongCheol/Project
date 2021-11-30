@@ -3,8 +3,8 @@
 
 div#wrap{
 	margin: 0 auto;
-	width: 1400px;
-	height: 1200px;
+	width: 1500px;
+	height: 2000px
 }
 ul{
 	
@@ -146,6 +146,24 @@ div.arrowMark:active {
 div#arrowRight {
     right: 0;
 }
+
+
+
+    
+    
+div#Arrivals #newtext{
+	margin: -1550px;
+	padding: -1550px;
+	border: 1px solid #000;
+font-weight: bold;
+text-align: center;
+}
+ 
+    
+
+
+
+
 /* 슬라이드쇼 방향키 끝 */
 
 /*    */

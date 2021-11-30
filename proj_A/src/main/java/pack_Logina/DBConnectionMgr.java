@@ -22,9 +22,11 @@
  * TO THE SOFTWARE.
  *
  */
-package proj_A_DBCP;
-import java.sql.*;
 
+
+package pack_Logina;
+
+import java.sql.*;
 import java.util.Properties;
 import java.util.Vector;
 
@@ -34,9 +36,10 @@ import java.util.Vector;
  * @author  Anil Hemrajani
  */
 public class DBConnectionMgr {
+	
     private Vector connections = new Vector(10);
     private String _driver = "com.mysql.cj.jdbc.Driver",
-    _url = "jdbc:mysql://127.0.0.1:3306/shoping?useSSL=false&serverTimezone=Asia/Seoul&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true",
+    _url = "jdbc:mysql://127.0.0.1:3306/login?useSSL=false&serverTimezone=Asia/Seoul&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true",
     _user = "root",
     _password = "1234";
     private boolean _traceOn = false;
@@ -44,6 +47,7 @@ public class DBConnectionMgr {
     private int _openConnections = 10;
     private static DBConnectionMgr instance = null;
 
+    
     public DBConnectionMgr() {
     }
 
