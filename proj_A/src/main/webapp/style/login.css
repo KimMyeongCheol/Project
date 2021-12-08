@@ -4,7 +4,7 @@
 div#wrap{
 	margin: 0 auto;
 	width: 1500px;
-height: 800px;
+	height: 800px
 }
 ul{
 	
@@ -31,10 +31,11 @@ div#size th{
 }
 
 div#loginArea th{
-	padding: 5px;
-	
+	padding-top: 5px;
+
 	font-size: 16px;
 		cursor: pointer;
+		
 }
 
 div#header {
@@ -104,7 +105,9 @@ font-size: 19px;
 div#slide {    /* 이미지 1개의 크기를 적용 */
     width: 770px;
     height: 750px;
-margin: 0 auto;
+
+margin-top: 0 auto;
+
     overflow: hidden; 
 
     /* 슬라이드쇼 방향키의 위치기준을 
@@ -117,7 +120,6 @@ margin: 0 auto;
 div#shuttleFrame {    /* 이미지 전체의 폭 */
     width: 2360px;
     height: 750px;
-    
 }
 
 #slide a {
@@ -159,11 +161,27 @@ text-align: center;
 }
  
     
+
+div#topbutton span#topBtn{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #abc;
+    text-align: center;
+    line-height: 40px;
+      position: fixed;
+      right: 20px;
+      bottom: 10px;
+      cursor: pointer;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
 /* 슬라이드쇼 방향키 끝 */
 
 /*    */
-
-
-
-
-
+/*    */

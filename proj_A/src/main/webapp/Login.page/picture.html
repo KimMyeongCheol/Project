@@ -1,0 +1,188 @@
+
+<%@page import="javax.print.attribute.standard.PrinterInfo"%>
+<%@page import="java.sql.*"%>
+<%@page import="proj_A_DBCP.DBConnectionMgr"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    
+    
+    <%-- 
+    <%
+    DBConnectionMgr pool = DBConnectionMgr.getInstance();
+    // 위에 페이지 임포트해야함 
+    //다른방법으로 bean으로 <jsp: bean해서 페이징해도되지만 임포트하는게 더 편함.
+    
+Connection objConn =pool.getConnection();
+    Statement objStmt = objConn.createStatement();
+    String sql ="select * from shopInfo order by num desc";
+    ResultSet objRs     =  objStmt.executeQuery(sql);
+    
+    
+    
+  
+   
+
+    %> --%>
+    
+    
+    
+    
+    
+    
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../style/style_Reset.css">
+<title>Document</title>
+<link rel="stylesheet" href="../style/style_Reset.css">
+
+<link rel="stylesheet" href="../style/pic.css">
+
+</head>
+<body>
+
+<div id="wrap">
+
+<div id="table">
+   <table>
+<tbody>
+		<%-- 
+		<%
+		if(objRs !=null){
+			
+   
+			while(objRs.next()){
+			 int cnt = 0;
+				String img = objRs.getString("ImgName");
+						String pr = objRs.getString("price");
+								String name = objRs.getString("name");
+											
+           
+		
+		%> --%>
+		<tr >
+	<td >
+		<img src="../img/blue.png"  width="300px" >
+	</td>
+		<br>
+		<td>pr</td>
+	<br>
+<td>ddd</td>
+		<td >
+		<img src="../img/1.png"  width="300px" >
+	</td>
+		
+		<td>pr</td>
+	
+<td>ddd</td>
+		<td >
+		<img src="../img/5.png"  width="300px" >
+	</td>
+		
+		<td>pr</td>
+	
+<td>ddd</td>
+		<td >
+		<img src="../img/7.png"  width="300px" >
+	</td>
+		
+		<td>pr</td>
+	
+<td>ddd</td>
+		<td >
+		<img src="../img/8.png"  width="300px" >
+	</td>
+		
+		<td>pr</td>
+	
+<td>ddd</td>
+		
+	<td >
+		<img src="../img/12.png"  width="300px" >
+	</td>
+		
+		<td>pr</td>
+	
+<td>ddd</td>
+		
+</tbody>
+         </table>
+
+</div>
+
+</div>
+               
+		<%-- 
+		</tr>
+		
+		<%
+
+			}
+					}
+		%>
+	 --%>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script/script.js"></script>
+
+</body>
+</html>
+
+
+
+  
+
+<!-- 
+            ["1.png", "베이지 라운드 티셔츠 ",
+            "긴팔 스타일링 라운드 티셔츠",
+            69000, 38000, 1487],
+            
+            ["2.png", "캐쥬얼 화이트 잠바",
+            "투톤 색상의 가을 잠바",
+            125000, 88000, 243],
+            
+            ["3.png", "그레이 체크 셔츠남방",
+            "노멀 바운드 셔츠", 75000, 55000, 2054],
+            
+            ["4.png", "카키 남방 셔츠",
+            "밀리터리 스타일",
+            118000, 98000, 3148],
+            
+            ["5.png", "라운드 긴팔 화이트",
+            "스타일리쉬한 루즈핏",
+            99000, 69000, 959],
+            
+            ["11.png", "삼색 스텐다드 바람막이",
+            "HIT 상품", 140000, 129000, 7151],
+            
+            ["12.png", "프망 반팔 티셔츠",
+            "여름을 상쾌하게 반값 티셔츠",
+            37000, 16000, 11535],
+            
+            ["8.png", "과잠 St 아우터 ",
+            "오렌지 색 포인트, 두터운 잠바",
+            116000, 96000, 388],
+            
+            ["9.png", "STANDARD 체크 셔츠",
+            "클래식 셔츠",
+            89000, 59000, 3701],
+            
+            ["10.png", "원버튼 블랙 롱 코트 ",
+            "핏이 살아나는 루즈핏 코트",
+            39000, 39000, 160],
+            
+            ["6.png", "블루종 MA-1",
+            "트랜디 자켓", 99000, 85000, 512],
+            
+            ["7.png", "여성 블라우스", "단아한 스트레이트 블라우스",
+            49700, 26800, 118]
+            ];
+
+
+       -->
