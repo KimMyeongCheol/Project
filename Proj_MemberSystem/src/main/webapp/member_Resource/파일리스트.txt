@@ -1,0 +1,59 @@
+동적웹프로젝트명 => Proj_Ch13_MemberSystem
+
+패키지명 => pack_Member
+Bean1 => MemberBean
+      (주의! 교재 회원인증 프로세스 설명구간에서는 
+       RegisterBean 으로 설명하고 있음.
+        pp.396 부터 MemberBean 으로 표기됨)
+Bean2 => ZipCodeBean
+Bean3 => MemberMgr
+Bean4 => DBCP : DBConnectionMgr
+
+JSP폴더명 => member
+JSP파일명1 => Login.jsp  (로그인 입력폼, form)
+JSP파일명2 => LoginProc.jsp  (로그인 실행, 세션 생성)
+JSP파일명3 => Logout.jsp   (로그아웃 실행, 세션 소멸)
+JSP파일명4 => Member.jsp  (회원가입 입력폼)
+JSP파일명5 => MemberProc.jsp   (회원가입 실행)
+JSP파일명6 => IdCheck.jsp    (아이디 중복 체크)
+JSP파일명7 => ZipCheck.jsp   (우편번호 검색)
+
+추가사항
+JSP파일명8 => Member_Mod.jsp(회원정보 수정입력폼, modify)
+                     (MemberMgr클래스의 메서드 추가
+                       => 메서드명 modifyMember( )
+                       => 회원가입페이지의  form 요소 양식을
+                            활용하여 로그인한 상태의 회원정보를
+                            출력한다. 
+                        => 수정대상 회원정보
+                             1) 비밀번호
+                             2) 이름
+                             3) 직업
+                             참고. 주소, 이메일, 취미 도 수정가능하지만
+                                    작업 배제.
+                         )
+
+JSP파일명9 =>  Member_ModProc.jsp(회원정보 수정실행)            
+JSP파일명10 => Member_Del.jsp (회원탈퇴 실행)
+                     (MemberMgr클래스의 메서드 추가
+                       => 메서드명 deleteMember( )를
+                             실행하여 회원 테이블에서
+                              탈퇴를 실행한 자료를 삭제)
+JSP파일명11 => Member_Goodbye.jsp
+                       (탈퇴회원에 대한 인사메시지 페이지
+                         => "그동안 저희 사이트를 이용해 주셔서
+                               고맙습니다. 언제나 재가입하실 수 있습니다.")
+
+회원정보수정/삭제에서 필요하다고 판단되면
+MemberBean 활용
+또한 회원탈퇴가 실행되면, 회원의 세션도 자동 소멸하고
+로그아웃 상태가 되어야 함.
+
+
+
+
+
+
+
+
+
